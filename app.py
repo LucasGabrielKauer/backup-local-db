@@ -8,7 +8,7 @@ for directory in folders:
     #Search inside each folder .db files
     files = [f for f in glob(directory + "**/*.db", recursive=True)]
     for f in files:
-        #Zip each file founded 
+        #Zip each file found 
         os.system('zip --encrypt backup.zip '+f)
 
 #cp file to drive
